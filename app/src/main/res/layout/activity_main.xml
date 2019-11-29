@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAqua"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Enter Full Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Check In" />
+
+    <TextView
+        android:id="@+id/checkout"
+        android:hint="Check Out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Select Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/roomtype"
+        android:hint="Select Room Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Adult"
+            android:textSize="25dp"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="Children"
+            android:textSize="25dp"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="Room"
+            android:textSize="25dp"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/adult"
+            android:hint="Adult"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/children"
+            android:hint="Children"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/rooms"
+            android:hint="Room"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_margin="80dp"
+        android:text="Calculate"
+        android:background="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Total:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/total"
+            android:text="0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="VAT:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/vat"
+            android:text="0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Grand Total:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/gtotal"
+            android:text="0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
