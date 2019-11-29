@@ -14,17 +14,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/checkin"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Check In" />
+        android:orientation="horizontal">
+        <TextView
 
-    <TextView
-        android:id="@+id/checkout"
-        android:hint="Check Out"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Check In" />
+        <TextView
+            android:id="@+id/checkin"
+            android:hint="Select Date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:text="Check Out"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"/>
+
+
+    </LinearLayout>
+
+
+
 
     <TextView
         android:text="Select Country"
